@@ -1,95 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dani Bertranou is a software engineer specializing in backend systems, cloud infrastructure, and data-driven development."
+    />
     <title>Dani Bertranou | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-</head>
-<body class="bg-green-800 text-white">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-emerald-950 text-gray-100 font-sans"
+    style="font-family: 'Inter', sans-serif"
+  >
     <div class="max-w-3xl mx-auto py-12 px-6">
-        <div class="text-center">
-            <img src="images/profile_img.jpeg" alt="Profile Picture" class="w-32 h-32 mx-auto rounded-full shadow-lg">
-            <h1 class="text-3xl font-semibold mt-4 text-white">Dani Bertranou</h1>
-            <p class="text-gray-300">Software Engineer</p>
-        </div>
-        
-        <div class="mt-8">
-            <nav class="flex justify-center space-x-6 border-b pb-4">
-                <button class="tab-link font-semibold text-gray-200 hover:text-white" onclick="openTab('about')">About</button>
-                <button class="tab-link font-semibold text-gray-200 hover:text-white" onclick="openTab('projects')">Experience</button>
-                <button class="tab-link font-semibold text-gray-200 hover:text-white" onclick="openTab('contact')">Contact</button>
-            </nav>
-        </div>
-        
-        <div class="mt-6">
-			<div id="about" class="mt-6 bg-white p-6 rounded-lg shadow tab-content">
-				<h2 class="text-2xl font-semibold text-gray-800">About Me</h2>
-				<div class="mt-4 space-y-4 text-gray-700 leading-relaxed">
-					<p>Hi, I’m Dani. With over five years of experience in software engineering, I specialize in backend development using Python and cloud infrastructure, particularly with AWS. I have a strong focus on building scalable and efficient systems, and I enjoy leveraging data to drive decisions and optimizations.</p>
-					<p>I’m passionate about tackling complex challenges and continuously improving systems.</p>
-					<p class="font-semibold text-gray-900">Let’s connect if you’re interested in backend engineering, cloud solutions, or data-driven development!</p>
-				</div>
-			</div>			
+      <div class="text-center">
+        <img
+          src="images/profile_img.jpeg"
+          alt="Profile Picture"
+          class="w-32 h-32 mx-auto rounded-full shadow-lg"
+        />
+        <h1 class="text-3xl font-semibold mt-4 text-gray-100">
+          Dani Bertranou
+        </h1>
+        <p class="text-xl text-gray-300">Software Engineer</p>
+      </div>
 
-            <div id="projects" class="tab-content hidden">
-                <h2 class="text-2xl font-semibold text-white">Experience</h2>
-                <ul class="mt-4 space-y-4">
-                    <li class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="font-semibold text-gray-800">Venmo</h3>
-                        <p class="text-gray-500">Sep 2021 - Present</p>
-                        <p class="text-gray-600">Backend Software Engineer @ Consumer Financial Services.</p>
-                    </li>
-                    <li class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="font-semibold text-gray-800">Super7ui</h3>
-                        <p class="text-gray-500">Jan 2021 - Aug 2021</p>
-                        <p class="text-gray-600">Software Developer @ Mineralsoft project.</p>
-                    </li>
-                    <li class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="font-semibold text-gray-800">Greencode Software</h3>
-                        <p class="text-gray-500">Oct 2020 - Dec 2020</p>
-                        <p class="text-gray-600">Software Developer @ TiKo Global project.</p>
-                    </li>
-                    <li class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="font-semibold text-gray-800">Eventbrite</h3>
-                        <p class="text-gray-500">Aug 2019 - Oct 2020</p>
-                        <p class="text-gray-600">Junior Software Engineer @ Payments team.</p>
-                    </li>
-                    <li class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="font-semibold text-gray-800">Universidad Tecnológica Nacional</h3>
-                        <p class="text-gray-500">Mar 2018 - Dec 2019</p>
-                        <p class="text-gray-600">Undergraduate Teaching Assistant @ Systems Design.</p>
-                    </li>
-                </ul>
-            </div>
+      <div class="mt-8">
+        <nav class="flex justify-center space-x-6 border-b pb-4">
+          <button
+            class="tab-link font-semibold text-gray-300 hover:text-gray-100 px-2 py-1 transition cursor-pointer"
+            onclick="openTab('about')"
+          >
+            About
+          </button>
+          <button
+            class="tab-link font-semibold text-gray-300 hover:text-gray-100 px-2 py-1 transition cursor-pointer"
+            onclick="openTab('projects')"
+          >
+            Experience
+          </button>
+          <button
+            class="tab-link font-semibold text-gray-300 hover:text-gray-100 px-2 py-1 transition cursor-pointer"
+            onclick="openTab('contact')"
+          >
+            Contact
+          </button>
+        </nav>
+      </div>
 
-            <div id="contact" class="tab-content hidden">
-                <h2 class="text-3xl font-semibold text-white">Contact</h2>
-                <p class="text-gray-300 mt-2">Feel free to reach out to me via the following:</p>
-                <ul class="mt-6 space-y-4">
-                    <li class="flex items-center space-x-3">
-                        <span class="font-semibold text-gray-200 w-20">Email:</span>
-                        <a href="mailto:dbertranou@gmail.com" class="text-lime-400 hover:text-lime-500 transition-colors">dbertranou@gmail.com</a>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="font-semibold text-gray-200 w-20">LinkedIn:</span>
-                        <a href="https://www.linkedin.com/in/danielabertranou" class="text-lime-400 hover:text-lime-500 transition-colors" target="_blank">linkedin.com/in/danielabertranou</a>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="font-semibold text-gray-200 w-20">GitHub:</span>
-                        <a href="https://github.com/dbertranou" class="text-lime-400 hover:text-lime-500 transition-colors" target="_blank">github.com/dbertranou</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="mt-6">
+        <div
+          id="about"
+          class="mt-6 bg-emerald-900 p-6 rounded-lg shadow tab-content"
+        >
+          <h2 class="text-2xl font-semibold text-gray-100">About Me</h2>
+          <div class="mt-4 space-y-4 text-gray-300 leading-relaxed">
+            <p>
+              Hi, I’m Dani. With over five years of experience in software
+              engineering, I specialize in backend development using Python and
+              cloud infrastructure, particularly with AWS. I have a strong focus
+              on building scalable and efficient systems, and I enjoy leveraging
+              data to drive decisions and optimizations.
+            </p>
+            <p>
+              I’m passionate about tackling complex challenges and continuously
+              improving systems.
+            </p>
+            <p class="font-semibold text-gray-200">
+              Let’s connect if you’re interested in backend engineering, cloud
+              solutions, or data-driven development!
+            </p>
+          </div>
         </div>
+
+        <div id="projects" class="tab-content hidden">
+          <h2 class="text-2xl font-semibold text-gray-200">Experience</h2>
+          <ul class="mt-4 space-y-4">
+            <li class="bg-emerald-900 text-gray-100 p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold text-gray-300">Venmo</h3>
+              <p class="text-gray-200">Sep 2021 - Present</p>
+              <p class="text-gray-200">
+                Backend Software Engineer @ Consumer Financial Services
+              </p>
+            </li>
+            <li class="bg-emerald-900 text-gray-100 p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold text-gray-300">Super7ui</h3>
+              <p class="text-gray-200">Jan 2021 - Aug 2021</p>
+              <p class="text-gray-200">
+                Software Developer @ MineralSoft project
+              </p>
+            </li>
+            <li class="bg-emerald-900 text-gray-100 p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold text-gray-300">
+                Greencode Software
+              </h3>
+              <p class="text-gray-200">Oct 2020 - Dec 2020</p>
+              <p class="text-gray-200">
+                Software Developer @ TiKo Global project
+              </p>
+            </li>
+            <li class="bg-emerald-900 text-gray-100 p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold text-gray-300">Eventbrite</h3>
+              <p class="text-gray-200">Aug 2019 - Oct 2020</p>
+              <p class="text-gray-200">
+                Junior Software Engineer @ Payments team
+              </p>
+            </li>
+            <li class="bg-emerald-900 text-gray-100 p-4 rounded-lg shadow">
+              <h3 class="text-lg font-semibold text-gray-300">
+                Universidad Tecnológica Nacional
+              </h3>
+              <p class="text-gray-200">Mar 2018 - Dec 2019</p>
+              <p class="text-gray-200">
+                Undergraduate Teaching Assistant @ Systems Design
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contact" class="tab-content hidden">
+          <div class="bg-emerald-900 p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-semibold text-gray-100">Contact</h2>
+            <p class="text-gray-300 mt-2">
+              Feel free to reach out to me via the following:
+            </p>
+            <ul class="mt-6 space-y-4">
+              <li class="flex items-center space-x-3">
+                <span class="font-semibold text-gray-200 w-20">Email:</span>
+                <a
+                  href="mailto:dbertranou@gmail.com"
+                  class="text-emerald-300 hover:text-emerald-200 transition-colors"
+                  >dbertranou@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-semibold text-gray-200 w-20">LinkedIn:</span>
+                <a
+                  href="https://www.linkedin.com/in/danielabertranou"
+                  class="text-emerald-300 hover:text-emerald-200 transition-colors"
+                  target="_blank"
+                  >linkedin.com/in/danielabertranou</a
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-semibold text-gray-200 w-20">GitHub:</span>
+                <a
+                  href="https://github.com/dbertranou"
+                  class="text-emerald-300 hover:text-emerald-200 transition-colors"
+                  target="_blank"
+                  >github.com/dbertranou</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <script>
-        function openTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
-            document.getElementById(tabId).classList.remove('hidden');
-        }
+      function openTab(tabId) {
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((tab) => tab.classList.add("hidden"));
+        document.getElementById(tabId).classList.remove("hidden");
+      }
     </script>
-</body>
+  </body>
 </html>
